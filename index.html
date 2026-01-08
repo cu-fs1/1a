@@ -4,63 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Form</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>User Registration</h1>
+    <main>
+      <h1>User Registration</h1>
 
-    <form action="#">
-      <!-- Name: Pattern ensures only letters and spaces are used -->
-      <div class="input-group">
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="John Doe"
-          pattern="[A-Za-z ]{2,50}"
-          required
-        />
-        <span class="error-message" data-error="name"
-          >Name should only contain letters and be at least 2 characters
-          long</span
-        >
-      </div>
+      <form action="#">
+        <!-- Name: Pattern ensures only letters and spaces are used -->
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            pattern="[A-Za-z ]{2,50}"
+            required
+          />
+          <span class="error-message" data-error="name"
+            >Name should only contain letters and be at least 2 characters
+            long</span
+          >
+        </div>
 
-      <!-- Age: Number type with min/max limits -->
-      <div class="input-group">
-        <label for="age">Age (18+):</label>
-        <input
-          type="number"
-          id="age"
-          name="age"
-          placeholder="25"
-          min="18"
-          max="120"
-          required
-        />
-        <span class="error-message" data-error="age"
-          >Age must be between 18 and 120</span
-        >
-      </div>
+        <!-- Age: Number type with min/max limits -->
+        <div class="input-group">
+          <label for="age">Age (18+):</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="25"
+            min="18"
+            max="120"
+            required
+          />
+          <span class="error-message" data-error="age"
+            >Age must be between 18 and 120</span
+          >
+        </div>
 
-      <!-- Email: Browser checks for @ symbol automatically -->
-      <div class="input-group">
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="john@example.com"
-          required
-        />
-        <span class="error-message" data-error="email"
-          >Please enter a valid email address</span
-        >
-      </div>
+        <!-- Email: Browser checks for @ symbol automatically -->
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john@example.com"
+            required
+          />
+          <span class="error-message" data-error="email"
+            >Please enter a valid email address</span
+          >
+        </div>
 
-      <button type="submit" class="btn">Submit</button>
-      <button type="reset" class="btn">Reset</button>
-    </form>
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn">Reset</button>
+      </form>
+    </main>
   </body>
 </html>
