@@ -1,0 +1,75 @@
+h1 {
+  text-decoration: underline;
+}
+
+/* Basic Layout */
+body {
+  font-family: sans-serif;
+  padding: 40px;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input group wrapper */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #aaaaaa;
+  border-radius: 10px;
+}
+
+/* Hide error messages by default */
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  display: none;
+}
+
+/* Show error message when input is invalid */
+input:invalid ~ .error-message {
+  display: block;
+}
+
+/* Style invalid inputs */
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+/* Common button styles */
+.btn {
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/* Specific button colors */
+button[type="submit"] {
+  background-color: blue;
+}
+
+/* Reset/Cancel button usually has a distinct style (e.g., Red or Gray) */
+button[type="reset"] {
+  background-color: red; /* Red */
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
