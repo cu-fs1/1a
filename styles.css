@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   padding: 40px;
   max-width: 400px;
+  margin: auto;
 }
 
 form {
@@ -67,7 +68,8 @@ button[type="submit"] {
 
 /* Reset/Cancel button usually has a distinct style (e.g., Red or Gray) */
 button[type="reset"] {
-  background-color: red; /* Red */
+  background-color: red;
+  /* Red */
 }
 
 .btn:hover {
