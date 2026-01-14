@@ -1,6 +1,0 @@
-{
-  "name": "static-site",
-  "scripts": {
-    "start": "npx serve ."
-  }
-}
